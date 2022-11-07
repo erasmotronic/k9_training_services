@@ -1,0 +1,274 @@
+:root {
+    --midnightBlue: #16253D;
+    --paleBlue: #2924d9;
+    --mustardYellow: #ffda44;
+    --fontFamily: 'Anton', sans-serif;
+}
+
+/*Fixes*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    background-color: black;
+    font-family: var(--fontFamily);
+    color: white;
+}
+
+/* General  */
+
+a {
+    text-decoration: none;
+    color: var(--paleBlue);
+}
+
+@media(min-width:768px) {
+    a {
+        color: var(--mustardYellow);
+    }
+}
+
+a:hover {
+    color: white;
+}
+
+strong {
+    color: var(--paleBlue);
+}
+
+h2, h3 {
+    color: var(--paleBlue);
+}
+
+/* Header */
+
+header {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(min-width:768px) {
+    header {
+        padding: 1rem;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction:row;
+        align-items:none;
+        justify-content:space-between;
+    }
+}
+
+header h1 {
+    text-align: center;
+}
+
+.socialLogo {
+    width: 6rem;
+    height: auto;
+}
+
+@media(min-width:768px) {
+    .socialLogo {
+        width: 3rem;
+        height: auto;
+        margin: 1rem;
+    }
+}
+
+.mainLogo {
+    width: 10rem;
+    height: auto;
+}
+
+.navButton {
+    background-color: var(--mustardYellow);
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 4rem;
+}
+
+@media(min-width:768px) {
+    .navButton {
+        background-color: black;
+        color: var(--mustardYellow);
+        width: auto;
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+    }
+}
+
+.navButton:hover {
+    cursor: pointer;
+    background-color: black;
+    color: var(--mustardYellow);
+}
+
+@media(min-width:768px) {
+    .navButton:hover {
+        cursor: pointer;
+        background-color: black;
+        color: var(--paleBlue);
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mustardYellow);
+}
+
+@media(min-width:768px) {
+    footer {
+        padding: 1rem;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction:row;
+        align-items:none;
+        justify-content:space-between;
+    }
+}
+
+footer h1 {
+    text-align: center;
+    color: black;
+}
+
+.footerInfo {
+    font-size: 1.5rem;
+    color: black;
+}
+
+footer b {
+    color: var(--paleBlue);
+}
+
+/* Home */
+
+.homeSection {
+    padding: 1rem;
+}
+
+.slideImage {
+    height: 15rem;
+    width: 100%;
+    border: 0.5rem solid var(--mustardYellow);
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.certificationGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media(min-width:768px) {
+    .certificationGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.certificationPanel {
+    width: 100%;
+    height: auto;
+    border: var(--mustardYellow) 0.5rem solid;
+    border-radius: 0.5rem;
+}
+
+.certificationPanel:hover {
+    cursor: pointer;
+    border: var(--paleBlue) 0.5rem solid;
+    border-radius: 0.5rem;
+}
+
+.certificationText {
+    text-align: center;
+    background-color: var(--mustardYellow);
+    color: black;
+    padding: 1rem;
+}
+
+.certificationText:hover {
+    cursor: pointer;
+    background-color: var(--paleBlue);
+    color: white;
+}
+
+#homeServicesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media(min-width:768px) {
+    #homeServicesGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.blackBox {
+    background-color: rgba(0, 0, 0, 0.678);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#homeServiceEin {
+    background-image: url(Images/backgroundServices_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+}
+
+#homeServiceZwei {
+    background-image: url(Images/backgroundServices_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+}
+
+#homeServiceDrei {
+    background-image: url(Images/backgroundServices_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+}
+
+#homeServiceVier {
+    background-image: url(Images/backgroundServices_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+}
